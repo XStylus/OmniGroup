@@ -6,11 +6,10 @@
 // <http://www.omnigroup.com/developer/sourcecode/sourcelicense/>.
 
 #import <tgmath.h>
+#import <CoreGraphics/CGGeometry.h>
 
 #if !defined(TARGET_OS_IPHONE) || !TARGET_OS_IPHONE
 #import <Foundation/NSGeometry.h>
-#else
-#import <CoreGraphics/CGGeometry.h>
 #endif
 
 #import <OmniBase/assertions.h>

@@ -6,8 +6,9 @@
 // <http://www.omnigroup.com/developer/sourcecode/sourcelicense/>.
 
 #import <Availability.h>
-#if defined(TARGET_OS_IPHONE) && TARGET_OS_IPHONE
 #import <CoreGraphics/CGGeometry.h>
+
+#if defined(TARGET_OS_IPHONE) && TARGET_OS_IPHONE
 #import <UIKit/UIGeometry.h>
 #else
 #import <Foundation/NSGeometry.h>
@@ -131,4 +132,3 @@ static inline BOOL OFFloatEqualToFloatWithAccuracy(CGFloat f1, CGFloat f2, CGFlo
 extern CGRect OFCenteredIntegralRectInRect(CGRect enclosingRect, CGSize toCenter);
 extern CGRect OFLargestCenteredIntegralRectInRectWithAspectRatioAsSize(CGRect enclosingRect, CGSize toCenter);
 extern CGRect OFCenterAndFitIntegralRectInRectWithSameAspectRatioAsSize(CGRect enclosingRect, CGSize toCenter);
-
